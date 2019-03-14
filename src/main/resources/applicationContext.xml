@@ -13,6 +13,9 @@
   </bean>
 
   <bean id="breakingNewsService" class="com.umcs.zmudziak.WeatherBreakingNewsService"/>
+  <bean id="apiInformation" class="com.umcs.zmudziak.WeatherApiInformation">
+    <constructor-arg value="${weather.api.key}"/>
+  </bean>
   <bean id="musicBreakingNewsService" class="com.umcs.zmudziak.MusicBreakingNewsService"/>
   <bean id="sportBreakingNewsService" class="com.umcs.zmudziak.SportBreakingNewsService"/>
   <bean id="musicInformation" class="com.umcs.zmudziak.MusicInformation">
